@@ -1,0 +1,32 @@
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+RewriteEngine on
+RewriteRule ^login$ ./src/public/pages/login.php
+RewriteRule ^verification$ ./src/account_control/_con.php
+RewriteRule ^logout$ ./src/public/pages/logout.php
+RewriteRule ^administracao$ ./src/public/pages/management.php
+RewriteRule ^administrador$ ./src/public/pages/management-special.php
+RewriteRule ^representante$ ./src/public/pages/post.php
+RewriteRule ^home$ ./src/public/pages/home.php
+RewriteRule ^atividades$ ./src/public/pages/activities.php
+RewriteRule ^trabalhos$ ./src/public/pages/works.php
+RewriteRule ^provas$ ./src/public/pages/assessments.php
+RewriteRule ^horario$ ./src/public/pages/schedules.php
+RewriteRule ^sobre_nos$ ./src/public/pages/about-us.php
+RewriteRule ^403$ ./src/public/pages/error_page/403.html
+RewriteRule ^404$ ./src/public/pages/error_page/404.html
+RewriteRule ^500$ ./src/public/pages/error_page/500.html
+
+ErrorDocument 403 https://studium.rf.gd/403
+ErrorDocument 404 https://studium.rf.gd/404
+ErrorDocument 500 https://studium.rf.gd/500
+
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Options -Indexes
+# AllowOverride
