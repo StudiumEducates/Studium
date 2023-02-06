@@ -1,5 +1,5 @@
 :root{
-    --icon_menu: url(../midia/icon_menu/icon_blue/schedules.png);
+    --icon_menu: url(./src/public/midia/icon_menu/icon_blue/schedules.png);
  }
  #container{
      display: flex;

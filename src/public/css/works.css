@@ -1,5 +1,5 @@
 :root{
-    --icon_menu: url(../midia/icon_menu/icon_blue/works.png);
+    --icon_menu: url(./src/public/midia/icon_menu/icon_blue/works.png);
  }
  /*desktop*/
  @media all and (min-width: 920px) {
