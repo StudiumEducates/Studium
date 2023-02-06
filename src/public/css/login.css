@@ -1,0 +1,751 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+/* main */
+    main{
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+
+        background-image: url(../midia/background_blue.png);
+        background-size: cover;
+    }
+
+    #block{
+        background-color: white;
+    }
+
+    @media all and (min-width: 1033px){
+
+        #block{
+            width: 510px;
+            height: auto;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #p1{
+            width: calc(100% - 130px);
+            height: max-content;
+
+            margin: 50px 0px 0px 0px;
+
+            font-family: var(--font-default);
+            font-weight: 900;
+            font-size: 2.1em;
+
+            color: black;
+        }
+
+        #p2{
+            width: calc(100% - 130px);
+            height: max-content;
+
+            margin: 0px 0px 20px 0px;
+
+            font-family: var(--font-default);
+            font-weight: 400;
+            font-size: 1em;
+
+            color: black;
+        }
+
+        form{
+            width: calc(100% - 130px);
+            height: max-content;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #radio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        input[type=radio]{
+            width: 18px;
+            height: 18px;
+            margin: 10px 0px;
+            cursor: pointer;
+        }
+
+        #radio label{
+            font-size: 1em;
+            font-family: var(--font-default);
+            color: rgb(95, 95, 95);
+            margin: 0px 15px 0px 5px;
+        }
+
+        label{
+            font-size: 1em;
+            font-family: var(--font-default);
+            color: rgb(95, 95, 95);
+            margin: 15px 0px 10px 3px;
+        }
+
+        input[type=text]{
+            display: none;
+            height: 38px;
+        }
+
+        input[type=password]{
+            height: 40px;
+        }
+
+        input[type=text], input[type=password]{
+            width: calc(100% - 12px);
+            padding: 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+            background-color: #fdfdfd;
+            border-radius: 6px;
+            outline: none;
+            font-family: var(--font-default);
+            font-size: 1em;
+            color: black;
+        }
+
+        select{
+            width: 100%;
+            height: 40px;
+            padding: 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+            background-color: #fdfdfd;
+            border-radius: 6px;
+            outline: none;
+            font-family: var(--font-default);
+            font-size: 1em;
+            color: black;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+
+        input[type=submit]{
+            width: 100%;
+            height: 46px;
+            margin: 32px 0px 0px 0px;
+            border: none;
+            color: white;
+            background: linear-gradient(347deg, rgb(34, 81, 174), rgb(89, 153, 221), rgb(136, 200, 243));
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 900;
+            font-size: 1.4em;
+            border-radius: 10px;
+            cursor: pointer;
+
+            transition: transform 0.1s;
+        }
+
+        input[type=submit]:active{
+            transform: scale(0.98);
+        }
+
+        form #span{
+            margin-left: 4px;
+            margin-top: 6px;
+            margin-bottom: -24px;
+            
+            font-family: var(--font-default);
+            font-size: 0.8em;
+            color: rgb(255, 116, 116);
+
+            display: none;
+        }
+
+        form #reCAP{
+            margin-left: 4px;
+            margin-top: 6px;
+            margin-bottom: -24px;
+            
+            font-family: var(--font-default);
+            font-size: 0.8em;
+            color: rgb(255, 116, 116);
+
+            display: none;
+        }
+
+        #reCAPTCHA{
+            display: flex;
+            margin-top: 32px;
+
+            width: 100%;
+            height: 74px;
+        }
+
+        #ani{
+            width: 77px;
+            height: 74px;
+            position: absolute;
+
+            background-color: #f9f9f9;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+
+            background-image: url(../midia/GIFs/insurance_qrcode.gif);
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .g-recaptcha{
+            margin-left: 78px
+        }
+
+
+    }
+
+    @media all and (max-width: 1033px){
+        
+        main{
+            display: flex;
+            justify-content: center;
+            background-position: left bottom;
+        }
+
+        #block{
+            width: calc(100% - 150px);
+            height: 545px;
+
+            margin-top: 25px;
+
+            border-radius: 30px;
+
+            transition: all 0.2s;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #p1{
+            width: calc(100% - 80px);
+            height: max-content;
+
+            margin: 30px 0px 0px 0px;
+
+            font-family: var(--font-default);
+            font-weight: 900;
+            font-size: 2.1em;
+
+            color: black;
+        }
+
+        #p2{
+            width: calc(100% - 80px);
+            height: max-content;
+
+            margin: 0px 0px 20px 0px;
+
+            font-family: var(--font-default);
+            font-weight: 400;
+            font-size: 1em;
+
+            color: black;
+        }
+
+        form{
+            width: calc(100% - 80px);
+            height: max-content;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #radio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        input[type=radio]{
+            width: 18px;
+            height: 18px;
+            margin: 10px 0px;
+            cursor: pointer;
+        }
+
+        #radio label{
+            font-size: 1em;
+            font-family: var(--font-default);
+            color: rgb(95, 95, 95);
+            margin: 0px 15px 0px 5px;
+        }
+
+        label{
+            font-size: 1em;
+            font-family: var(--font-default);
+            color: rgb(95, 95, 95);
+            margin: 15px 0px 10px 3px;
+        }
+
+        input[type=text]{
+            display: none;
+            height: 38px;
+        }
+
+        input[type=password]{
+            height: 40px;
+        }
+
+        input[type=text], input[type=password]{
+            width: calc(100% - 12px);
+            padding: 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+            background-color: #fdfdfd;
+            border-radius: 6px;
+            outline: none;
+            font-family: var(--font-default);
+            font-size: 1em;
+            color: black;
+        }
+
+        select{
+            width: 100%;
+            height: 40px;
+            padding: 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+            background-color: #fdfdfd;
+            border-radius: 6px;
+            outline: none;
+            font-family: var(--font-default);
+            font-size: 1em;
+            color: black;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+
+        input[type=submit]{
+            width: 100%;
+            height: 43px;
+            margin: 32px 0px 0px 0px;
+            border: none;
+            color: white;
+            background: linear-gradient(347deg, rgb(34, 81, 174), rgb(89, 153, 221), rgb(136, 200, 243));
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 900;
+            font-size: 1.4em;
+            border-radius: 10px;
+            cursor: pointer;
+
+            transition: transform 0.1s;
+        }
+
+        input[type=submit]:active{
+            transform: scale(0.98);
+        }
+
+        form span{
+            margin-left: 4px;
+            margin-top: 6px;
+            margin-bottom: -24px;
+            
+            font-family: var(--font-default);
+            font-size: 0.8em;
+            color: rgb(255, 116, 116);
+
+            display: none;
+        }
+
+        form #reCAP{
+            width: calc(100% - 210px);
+            height: auto;
+
+            margin-left: 4px;
+            margin-top: 6px;
+            margin-bottom: -24px;
+            
+            font-family: var(--font-default);
+            font-size: 0.8em;
+            color: rgb(255, 116, 116);
+
+            display: none;
+            justify-content: center;
+        }
+
+        #reCAPTCHA{
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+
+            width: 100%;
+            height: 74px;
+        }
+
+        #ani{
+            width: 77px;
+            height: 74px;
+            position: absolute;
+
+            background-color: #f9f9f9;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+
+            background-image: url(../midia/GIFs/insurance_qrcode.gif);
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .g-recaptcha{
+            margin-left: 78px
+        }
+
+    }
+
+    @media all and (max-width: 675px){
+
+        main{
+            display: flex;
+            justify-content: center;
+            background-position: left bottom;
+        }
+
+        #block{
+            width: calc(100% - 50px);
+            min-width: 466px;
+            height: 545px;
+
+            margin-top: 25px;
+
+            border-radius: 30px;
+
+            transition: all 0.2s;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #p1{
+            width: calc(100% - 80px);
+            height: max-content;
+
+            margin: 30px 0px 0px 0px;
+
+            font-family: var(--font-default);
+            font-weight: 900;
+            font-size: 2.1em;
+
+            color: black;
+        }
+
+        #p2{
+            width: calc(100% - 80px);
+            height: max-content;
+
+            margin: 0px 0px 20px 0px;
+
+            font-family: var(--font-default);
+            font-weight: 400;
+            font-size: 1em;
+
+            color: black;
+        }
+
+        form{
+            width: calc(100% - 80px);
+            height: max-content;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #radio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        input[type=radio]{
+            width: 18px;
+            height: 18px;
+            margin: 10px 0px;
+            cursor: pointer;
+        }
+
+        #radio label{
+            font-size: 1em;
+            font-family: var(--font-default);
+            color: rgb(95, 95, 95);
+            margin: 0px 15px 0px 5px;
+        }
+
+        label{
+            font-size: 1em;
+            font-family: var(--font-default);
+            color: rgb(95, 95, 95);
+            margin: 15px 0px 10px 3px;
+        }
+
+        input[type=text]{
+            display: none;
+            height: 38px;
+        }
+
+        input[type=password]{
+            height: 40px;
+        }
+
+        input[type=text], input[type=password]{
+            width: calc(100% - 12px);
+            padding: 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+            background-color: #fdfdfd;
+            border-radius: 6px;
+            outline: none;
+            font-family: var(--font-default);
+            font-size: 1em;
+            color: black;
+        }
+
+        select{
+            width: 100%;
+            height: 40px;
+            padding: 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+            background-color: #fdfdfd;
+            border-radius: 6px;
+            outline: none;
+            font-family: var(--font-default);
+            font-size: 1em;
+            color: black;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+
+        input[type=submit]{
+            width: 100%;
+            height: 43px;
+            margin: 32px 0px 0px 0px;
+            border: none;
+            color: white;
+            background: linear-gradient(347deg, rgb(34, 81, 174), rgb(89, 153, 221), rgb(136, 200, 243));
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 900;
+            font-size: 1.4em;
+            border-radius: 10px;
+            cursor: pointer;
+
+            transition: transform 0.1s;
+        }
+
+        input[type=submit]:active{
+            transform: scale(0.98);
+        }
+
+        form span{
+            margin-left: 4px;
+            margin-top: 6px;
+            margin-bottom: -24px;
+            
+            font-family: var(--font-default);
+            font-size: 0.8em;
+            color: rgb(255, 116, 116);
+
+            display: none;
+        }
+
+        form #reCAP{
+            width: calc(100% - 210px);
+            height: auto;
+
+            margin-left: 4px;
+            margin-top: 6px;
+            margin-bottom: -24px;
+            
+            font-family: var(--font-default);
+            font-size: 0.8em;
+            color: rgb(255, 116, 116);
+
+            display: none;
+            justify-content: center;
+        }
+
+        #reCAPTCHA{
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+
+            width: 100%;
+            height: 74px;
+        }
+
+        #ani{
+            width: 77px;
+            height: 74px;
+            position: absolute;
+            z-index: 1;
+
+            background-color: #f9f9f9;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid rgb(207, 207, 207);
+
+            background-image: url(../midia/GIFs/insurance_qrcode.gif);
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .g-recaptcha{
+            margin-left: 78px
+        }
+
+    }
+/* main */
+
+/*loading*/
+    #action_area{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: white;
+        z-index: 2;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 0.1s;
+    }
+
+    @media all and (max-width: 1033px){
+
+        #logo{
+            transform: scale(1);
+            transition: all 0.1s;
+        }
+    }
+
+    @media all and (max-width: 900px){
+
+        #logo{
+            transform: scale(0.7);
+            transition: all 0.1s;
+        }
+    }
+
+    @media all and (max-width: 700px){
+
+        #logo{
+            transform: scale(0.4);
+            transition: all 0.1s;
+        }
+    }
+
+    @media all and (max-width: 350px){
+
+        #logo{
+            transform: scale(0.3);
+            transition: all 0.1s;
+        }
+    }
+
+    @media all and (max-width: 270px){
+
+        #logo{
+            transform: scale(0.2);
+            transition: all 0.1s;
+        }
+    }
+
+    /*logo*/
+        #icon{
+            width: 220px;
+            height: 222.5px;
+
+            transform:translate(0%, 0%) rotate(-90deg);
+
+            background: linear-gradient(231deg, rgb(136 200 243), rgb(89 153 221), rgb(34 81 174));
+            border-radius: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            user-select: none;
+
+            animation-name: logo;
+            animation-duration: 5s;
+        }
+
+        #icon P{
+            font-family: var(--font-default);
+            font-weight: 900;
+            font-size: 11em;
+
+            transform:rotate(90deg);
+
+            user-select: none;
+
+            color: white;
+            opacity: 1;
+
+            animation-name: St;
+            animation-duration: 5s;
+        }
+
+        #title{
+            font-family: var(--font-default);
+            font-weight: 900;
+            font-size: 10em;
+
+            user-select: none;
+
+            transform:translate(2%, 0%);
+            
+            background: linear-gradient(25deg, #2265ae, rgb(89 153 221), rgb(136 200 243));
+            background-clip: text;
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+
+            animation-name: title;
+            animation-duration: 5s;
+        }
+
+        @keyframes logo {
+            0%   {transform:translate(100%, 160%) rotate(270deg); opacity: 0; background: linear-gradient(321deg, rgb(34 81 174), rgb(89 153 221), rgb(136 200 243));}
+            5%   {opacity: 1;}
+            15%  {transform:translate(100%, -140%) rotate(0deg);}
+            16%  {margin-top: 0px; transform:translate(100%, 0%);}
+            18%  {margin-top: 200px; transform:translate(100%, 0%) rotate(0deg) scaleY(0.3) scaleX(1.3);}
+            22%  {margin-top: 0px; transform:translate(100%, 0%);}
+            30%  {margin-top: 0px; transform:translate(100%, 0%); background: linear-gradient(321deg, rgb(34 81 174), rgb(89 153 221), rgb(136 200 243));}
+            40%  {transform:translate(0%, 0%) rotate(-90deg); background: linear-gradient(231deg, rgb(136 200 243), rgb(89 153 221), rgb(34 81 174));}
+        }
+
+        @keyframes St {
+            0%   {opacity: 0; transform:rotate(0deg);}
+            15%  {opacity: 0;}
+            16%  {opacity: 0;}
+            18%  {opacity: 1;}
+            30%  {opacity: 1; transform:rotate(0deg);}
+            40%  {transform:rotate(90deg);}
+        }
+        
+        @keyframes title {
+            0% {transform:translate(-2%, 0%); opacity: 0;}
+            35%  {transform:translate(-2%, 0%); opacity: 0;}
+            40%  {transform:translate(2%, 0%); opacity: 1;}
+        }
+    /*logo*/
+/*loading*/

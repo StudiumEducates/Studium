@@ -1,0 +1,81 @@
+:root{
+    --icon_menu: url(../midia/icon_menu/icon_blue/schedules.png);
+ }
+ #container{
+     display: flex;
+     justify-content: center;
+ }
+    /*container*/
+        #horario{
+            width: calc(100% - 40px);
+            height: max-content;
+
+            margin-top: 20px;
+        
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            background-color: var(--color-elemente-white);
+            border-radius: 10px;
+            box-shadow: 4px 4px 20px #e9edf8;
+        }
+    
+      /*horario*/
+        table{
+          width: 100%;
+          height: auto;
+    
+          padding: 0px 10px 0px 10px;
+          margin: 5px 0px 5px 0px;
+    
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+    
+          overflow: auto;
+        }
+      
+        th{
+          width: 15.8vw;
+          min-width: 120px;
+          height: 38px;
+    
+          font-family: var(--font-default);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+    
+          color: #232323;
+        }
+    
+        #days th{
+          border-bottom: 1px solid #CBCBCB;
+        }
+        
+        #option{
+          width: 38px;
+          min-width: 38px;
+          height: 38px;
+        }
+    
+        #option input{
+          width: 38px;
+          height: 38px;
+    
+          border: none;
+    
+          font-size: 0;
+    
+          background-color: transparent;
+          background-position: center center;
+          background-repeat: no-repeat;
+          filter: drop-shadow(0px 0px 14px rgba(255, 0, 0, 0.38));
+    
+          cursor: pointer;
+        }
+    
+        #clock{
+          border-right: 1px solid #CBCBCB;
+        }
+    /*container*/

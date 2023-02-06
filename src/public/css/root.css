@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+/*variáveis*/
+:root{
+   /*fonts*/
+      --font-default: Google Sans, roboto;
+      --font-logo: Roboto;
+      --font-title: Alata;
+    /*fonts*/
+    /*background-color*/
+       --color-background-default-1: #f6f7fb;
+       --color-background-default-2: white;
+       --background-page-transparent: white;
+       --border-transparent: rgba(255, 255, 255, 0.15);
+    /*background-color*/
+    /*elements-color*/
+       --color-elemente-blue: #4385f5;
+       --color-elemente-white: white;
+       --border-clock: rgb(223, 223, 223);
+    /*elements-color*/
+    /*color-font-icon*/
+       --color-font-default-1: #282828;
+       --color-font-default-2: white;
+       --color-icon-1: #282828;
+       --color-icon-2: white;
+    /*color-font-icon*/
+}
