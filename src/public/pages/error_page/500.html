@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="./src/public/midia/Icon_naveg.png"/>
+    <link rel="stylesheet" href="./src/public/css/root.css">
+    <title>Studium - Erro 500</title>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            width: auto;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container{
+            min-width: 716px;
+            padding: 80px 50px 80px 50px;
+            border-radius: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            background-color: white;
+        }
+
+        #container img{
+            width: 300px;
+            height: 300px;
+
+            border-radius: 30px;
+        }
+
+        #text p1{
+            font-family: var(--font-default);
+            font-weight: 800;
+            font-size: 50px;
+            color: black;
+
+            margin-top: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #text p2{
+            font-family: var(--font-default);
+            font-weight: 400;
+            font-size: 15px;
+            color: #9ea3a9;
+
+            margin-top: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        button{
+            width: 395px;
+            height: 45px;
+
+            padding-top: 5px;
+
+            margin-top: 40px;
+
+            border-radius: 50px;
+            border: none;
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+
+            font-family: var(--font-default);
+            font-weight: 800;
+            font-size: 15px;
+            color: white;
+
+            background-color: #519df3;
+
+            transition: all 0.5s;
+        }
+
+        button:active{
+            transform: scale(0.95);
+        }
+
+        @media all and (max-width: 850px){
+
+        #container{
+            width: calc(100% - 50px);
+
+            min-width: 387px;
+            padding: 50px 0px 50px 0px;
+            border-radius: 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            background-color: white;
+        }
+
+        #container img{
+            width: 300px;
+            height: 300px;
+
+            border-radius: 30px;
+        }
+
+        #text p1{
+            font-family: var(--font-default);
+            font-weight: 800;
+            font-size: 20px;
+            color: black;
+
+            margin-top: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #text p2{
+            font-family: var(--font-default);
+            font-weight: 400;
+            font-size: 15px;
+            color: #9ea3a9;
+
+            margin-top: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        button{
+            width: calc(100% - 100px);
+            height: 45px;
+
+            padding-top: 5px;
+
+            margin-top: 40px;
+
+            border-radius: 50px;
+            border: none;
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+
+            font-family: var(--font-default);
+            font-weight: 800;
+            font-size: 15px;
+            color: white;
+
+            background-color: #519df3;
+
+            transition: all 0.5s;
+        }
+
+        button:active{
+            transform: scale(0.98);
+        }
+
+    }
+
+    </style>
+</head>
+<body onload="img()">
+    <div id="container">
+        <img id="img" src="">
+        <div id="text">
+            <p1>OPS! NÃO ENCONTRAMOS<br>ESSA PÁGINA :(</p1>
+            <p2>ERRO 500</p2>
+        </div>
+        <button onclick="window.location.href = 'login'">VOLTAR AO INÍCIO</button>
+    </div>
+    <script>
+        function img(){
+            const img = [];
+            img[0] = "./src/public/midia/pag_error/0.jpg";
+            img[1] = "./src/public/midia/pag_error/1.jpg";
+            img[2] = "./src/public/midia/pag_error/2.jpg";
+            img[3] = "./src/public/midia/pag_error/3.jpg";
+            img[4] = "./src/public/midia/pag_error/4.jpg";
+            img[5] = "./src/public/midia/pag_error/5.jpg";
+            img[6] = "./src/public/midia/pag_error/6.jpg";
+            img[7] = "./src/public/midia/pag_error/7.jpg";
+            img[8] = "./src/public/midia/pag_error/8.jpg";
+            img[9] = "./src/public/midia/pag_error/9.jpg";
+            img[10] = "./src/public/midia/pag_error/10.jpg";
+            img[11] = "./src/public/midia/pag_error/11.jpg";
+            img[12] = "./src/public/midia/pag_error/12.jpg";
+            img[13] = "./src/public/midia/pag_error/13.jpg";
+            img[14] = "./src/public/midia/pag_error/14.jpg";
+            img[15] = "./src/public/midia/pag_error/15.jpg";
+            img[16] = "./src/public/midia/pag_error/16.jpg";
+            img[17] = "./src/public/midia/pag_error/17.jpg";
+            img[18] = "./src/public/midia/pag_error/18.jpg";
+            img[19] = "./src/public/midia/pag_error/19.jpg";
+            img[20] = "./src/public/midia/pag_error/20.jpg";
+            img[21] = "./src/public/midia/pag_error/21.jpg";
+            img[22] = "./src/public/midia/pag_error/22.jpg";
+            img[23] = "./src/public/midia/pag_error/23.jpg";
+            img[24] = "./src/public/midia/pag_error/24.jpg";
+            img[25] = "./src/public/midia/pag_error/25.jpg";
+            img[26] = "./src/public/midia/pag_error/26.jpg";
+            img[27] = "./src/public/midia/pag_error/27.jpg";
+            img[28] = "./src/public/midia/pag_error/28.jpg";
+            img[29] = "./src/public/midia/pag_error/29.jpg";
+            img[30] = "./src/public/midia/pag_error/30.jpg";
+            img[31] = "./src/public/midia/pag_error/31.jpg";
+            img[32] = "./src/public/midia/pag_error/32.jpg";
+            img[33] = "./src/public/midia/pag_error/33.jpg";
+            img[34] = "./src/public/midia/pag_error/34.jpg";
+            img[35] = "./src/public/midia/pag_error/35.jpg";
+            img[36] = "./src/public/midia/pag_error/36.jpg";
+            img[37] = "./src/public/midia/pag_error/37.jpg";
+            img[38] = "./src/public/midia/pag_error/38.jpg";
+            img[39] = "./src/public/midia/pag_error/39.jpg";
+            img[40] = "./src/public/midia/pag_error/40.png";
+            img[41] = "./src/public/midia/pag_error/41.jpg";
+            img[42] = "./src/public/midia/pag_error/42.jpg";
+            img[43] = "./src/public/midia/pag_error/43.jpg";
+            img[44] = "./src/public/midia/pag_error/44.jpg";
+            img[43] = "./src/public/midia/pag_error/43.jpg";
+            img[44] = "./src/public/midia/pag_error/44.jpg";
+            img[45] = "./src/public/midia/pag_error/45.jpg";
+            img[46] = "./src/public/midia/pag_error/46.jpg";
+            img[47] = "./src/public/midia/pag_error/47.jpg";
+            img[48] = "./src/public/midia/pag_error/48.jpg";
+            img[49] = "./src/public/midia/pag_error/49.jpg";
+            img[50] = "./src/public/midia/pag_error/50.jpg";
+            var number = Math.floor(Math.random() * 50);
+            document.getElementById("img").src = img[number];
+            var largura_window = window.innerWidth;
+            if(largura_window > 350){
+                desktop();
+            }
+        }
+
+            window.addEventListener('resize', function () {
+                var largura_window = window.innerWidth;
+            
+                if (largura_window < 437) {
+
+                    var proportion = (largura_window/1000)*2.3;
+                    var top = ((proportion-1)*860);
+                    if(top < 25){
+                        document.getElementById('container').style.cssText = 'transform: scale('+proportion+'); transition: all 0.0s;';
+                    }else{
+                        document.getElementById('container').style.cssText = 'transform: scale(1);';
+                    }
+                }else{
+                    document.getElementById('container').style.cssText = 'transform: scale(1);';
+                }
+            });
+
+            window.addEventListener('resize', function () {
+                var altura_window = window.innerHeight;
+                var largura_window = window.innerWidth;
+            
+                if (altura_window < 759 & largura_window > 437) {
+                    var proportion = (altura_window/1000)/0.75;
+                    document.getElementById('container').style.cssText = 'transform: scale('+proportion+'); transition: all 0.0s;';
+                }
+            });
+
+            var largura_window = window.innerWidth;
+            if (largura_window < 437) {mobile();}
+                        
+            function mobile(){
+            var largura_window = window.innerWidth;
+                        
+                if (largura_window < 437) {
+
+                    var larg = largura_window - 450;
+                    largura_window = largura_window + larg;
+
+                    var proportion = (largura_window/1000)*2.8;
+                    var top = ((proportion-1)*860);
+                    if(top < 25){
+                        document.getElementById('container').style.cssText = 'transform: scale('+proportion+'); transition: all 0.0s;';
+                    }else{
+                        document.getElementById('container').style.cssText = 'transform: scale(1);';
+                    }
+                }
+            }
+
+            function desktop(){
+                var altura_window = window.innerHeight;
+                var largura_window = window.innerWidth;
+            
+                if (altura_window < 759 & largura_window > 437) {
+                    var proportion = (largura_window/1000)/0.85;
+                    document.getElementById('container').style.cssText = 'transform: scale('+proportion+'); transition: all 0.0s;';
+                }
+            }
+    </script>
+</body>
+</html>
